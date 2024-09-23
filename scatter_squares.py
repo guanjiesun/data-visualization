@@ -19,6 +19,11 @@ def main():
     # 设置每一个坐标轴的取值范围
     ax.axis([0, 110, 0, 11000])
 
+    # 保存图片
+    plt.savefig('./saved_figures/scatter_squares.pdf',
+                format='pdf', bbox_inches='tight', pad_inches=0.1)
+
+    # 显示图片
     plt.show()
 
 
