@@ -2,9 +2,28 @@ import matplotlib.pyplot as plt
 
 
 def main():
-    squares = [1, 4, 9, 16, 25]
+    """数据可视化初探"""
+
+    # 准备数据
+    numbers = [1, 2, 3, 4, 5]
+    squares = [pow(number, 2) for number in numbers]
+
+    # 生成图表
+    plt.style.use('seaborn-v0_8')
     fig, ax = plt.subplots()
-    ax.plot(squares)
+    ax.plot(numbers, squares, linewidth=3, color='red')
+
+    # 设置坐标轴刻度的样式
+    ax.tick_params(axis='both', labelsize=10)
+
+    # 设置坐标轴标签
+    ax.set_xlabel('Numbers', fontsize=14)
+    ax.set_ylabel('Squares', fontsize=14)
+
+    # 设置图表标题
+    ax.set_title("Square Numbers", fontsize=18)
+
+    # 显示图表
     plt.show()
 
 
