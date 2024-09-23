@@ -45,19 +45,11 @@ def make_two_dice():
 
     # 同时投掷这两个骰子若干次，保存它们点数之和
     results = [die1.roll() + die2.roll() for _ in range(1000)]
-    # results = []
-    # for _ in range(1000):
-    #     result = die1.roll() + die2.roll()
-    #     results.append(result)
 
     # 统计每一个点数出现的次数
     min_result = 2
     max_result = die1.num_sides + die2.num_sides
     frequencies = [results.count(value) for value in range(min_result, max_result+1)]
-    # frequencies = []
-    # for value in range(min_result, max_result+1):
-    #     frequency = results.count(value)
-    #     frequencies.append(frequency)
 
     # 可视化结果
     x_values = list(range(min_result, max_result+1))
