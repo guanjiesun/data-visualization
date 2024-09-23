@@ -23,6 +23,10 @@ def main():
     # 设置图表标题
     ax.set_title("Square Numbers", fontsize=18)
 
+    # 保存图片
+    plt.savefig('./saved_figures/mpl_squares.pdf',
+                format='pdf', bbox_inches='tight', pad_inches=0.1)
+
     # 显示图表
     plt.show()
 
