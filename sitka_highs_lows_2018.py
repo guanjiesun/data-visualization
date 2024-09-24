@@ -15,7 +15,7 @@ def get_highs_lows_dates(filename):
         for i, column in enumerate(header):
             print(i, column)
 
-        # 获取最高温度和日期
+        # 获取最高温度和日期(缺少异常处理机制)
         highs, dates, lows = list(), list(), list()
         for row in reader:
             dates.append(datetime.strptime(row[2], '%Y-%m-%d'))
