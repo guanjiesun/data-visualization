@@ -49,7 +49,7 @@ def plot_highs_lows(highs, lows, dates):
 
 def main():
     # 数据集: 七月份sitka地区的每天的天气信息
-    filename = './datasets/sitka_weather_07-2018_simple.csv'
+    # filename = './datasets/sitka_weather_07-2018_simple.csv'
     # 数据集: 2018年sitka地区的每天的天气信息
     filename = './datasets/sitka_weather_2018_simple.csv'
 
